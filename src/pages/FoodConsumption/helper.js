@@ -408,6 +408,7 @@ export const generateHighchartsData = (dailyData = []) => {
         type: 'column',
         height: 500,
         marginBottom: 100,
+        spacingLeft:1,
         scrollablePlotArea: {
           minWidth: 1500,
           scrollPositionX: 1,
@@ -429,14 +430,14 @@ export const generateHighchartsData = (dailyData = []) => {
         },
         stackLabels: {
           enabled: true,
-          //style: {
-            //fontWeight: 'bold',
-          //}
+          style: {
+            fontWeight: 'bold',
+          }
         },
         
       },
       tooltip: {
-        valueSuffix: 'kg',
+        valueSuffix: ' kg',
         split: true
     },
       legend: {
